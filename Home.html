@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+  </script>
+
+  </head>
+  <body style="background-color: #fce8bc;">
+
+     <div class="sidebar-Home">
+      <div class="logo">
+        <i class='bx bxl-codepen'></i>
+        <span>My Portfolio</span>
+      </div>
+      <ul class="nav-list">
+        <li><a href="Home.html"><i class='bx bx-home'></i> <span>Home</span></a></li>
+        <li><a href="Experience.html"><i class='bx bx-user'></i> <span>Experience</span></a></li>
+        <li><a href="Gallery.html"><i class='bx bx-photo-album'></i> <span>Gallery</span></a></li>
+        <li><a href="Contact.html"><i class='bx bx-envelope'></i> <span>Contact</span></a></li>
+      </ul>
+    </div>
+    <div class = "main-content">
+      <div class = "profile-container">
+      <video autoplay muted loop class="profile-img">
+      <source src="video/jengvidi.mp4" type="video/mp4" />
+    </video>
+     <div class = "profile-description">
+      <h2 class = "Big-size"> Thanabat Kangwankrai</h2>
+      <p class = "Small-size"> Hello , I'm Jeng from CPE class.<br>Nice to meet you.</p>  
+     </div>
+    </div>
+    <h1 class="center far-top" style="color: rgb(0, 0, 0);">Skills</h1>
+    
+    <div class = "grid-container far-top">
+      <div class = "grid-box">
+        <img src="img/swimming.webp" alt="swimming" class="skill-img">
+        <h3 class="Medium-size">Swimming</h3>
+        <p class = "Small-size">Swimming is more than just a sport to me. It’s a way to take care of my body,clear my mind, and enjoy the moment. </p>
+      </div>
+      <div class = "grid-box">
+        <img src="img/pgm.jpg" alt="coding" class="skill-img">
+        <h3 class="Medium-size">Coding</h3>
+        <p class = "Small-size">I'm still learning computer languages and I think it will be good with me in the future.</p>
+      </div>
+      <div class = "grid-box">
+        <img src="img/photo.jpg" alt="photograph" class="skill-img">
+        <h3 class="Medium-size">Photography</h3>
+        <p class = "Small-size">It inspires me to keep looking, feeling, and telling stories by one picture at a time.</p>
+      </div>
+      <div class = "grid-box">
+        <img src="img/japanese.webp" alt="japan" class="skill-img">
+        <h3 class="Medium-size">Languages</h3>
+        <p class = "Small-size">I'm starting to learning the Japanese language.</p>
+      </div>
+    </div> 
+    </div>
+      
+    
+  </body>
+
+  <script>
+    let sidebar = document.querySelector('.sidebar');
+    let btn = document.querySelector('#btn');
+
+    btn.onclick = function() {
+      sidebar.classList.toggle('active');  
+    };
+  </script>
+</html>
